@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的名字 | 创意开发者</title>
+    <meta name="description" content="一个充满激情的开发者，专注于构建美观且功能强大的数字体验。">
+    <meta name="keywords" content="前端开发,UI设计,全栈开发,网页设计,作品集">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">你的名字</a>
+            <div class="nav-links">
+                <a href="#home">首页</a>
+                <a href="#work">作品</a>
+                <a href="#about">关于</a>
+                <a href="#contact">联系</a>
+                <a href="#" class="btn-resume">简历</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 英雄区域 -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">创造有意义的<span class="highlight">数字体验</span></h1>
+                <p class="hero-subtitle">我是一个<span class="highlight">全栈开发者</span>和<span class="highlight">UI/UX设计师</span>，专注于构建美观且功能强大的网络应用。</p>
+                <div class="hero-btns">
+                    <a href="#work" class="btn-primary">查看作品</a>
+                    <a href="#contact" class="btn-secondary">联系我</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-placeholder">
+                    <i class="fas fa-user"></i>
+                    <p>你的头像</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品展示区域 -->
+        <section id="work" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">精选<span class="highlight">项目</span></h2>
+                <p class="section-subtitle">以下是我最近完成的一些代表性项目</p>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- 项目卡片将通过JavaScript动态生成 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于我区域 -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">关于<span class="highlight">我</span></h2>
+                    <div class="about-text">
+                        <p>我是一名充满激情的开发者，拥有多年构建Web应用的经验。我热爱将复杂问题转化为简洁、优雅的解决方案。</p>
+                        <p>在我的职业生涯中，我致力于创建既美观又实用的数字产品，注重用户体验的每一个细节。</p>
+                    </div>
+                    
+                    <div class="skills">
+                        <h3>技术栈</h3>
+                        <div class="skills-list">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Vue.js</span>
+                            <span>Node.js</span>
+                            <span>Python</span>
+                            <span>UI/UX设计</span>
+                            <span>响应式设计</span>
+                            <span>Git</span>
+                            <span>API集成</span>
+                        </div>
+                    </div>
+                    
+                    <div class="experience">
+                        <h3>经历</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022 - 至今</div>
+                                <div class="timeline-content">
+                                    <h4>高级前端开发者</h4>
+                                    <p>某科技公司</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2020 - 2022</div>
+                                <div class="timeline-content">
+                                    <h4>全栈开发者</h4>
+                                    <p>某创业公司</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系区域 -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">联系<span class="highlight">我</span></h2>
+                <p class="section-subtitle">有项目想法或想聊聊？随时联系！</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>邮箱</h3>
+                                <p>your.email@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>位置</h3>
+                                <p>北京，中国</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>电话</h3>
+                                <p>+86 138 0000 0000</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="你的姓名" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="邮箱地址" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" placeholder="你的消息..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">发送消息</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://twitter.com/yourusername" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://codepen.io/yourusername" target="_blank" class="social-link">
+                        <i class="fab fa-codepen"></i>
+                        <span>CodePen</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year">2023</span> 你的名字. 保留所有权利.</p>
+            <p>用 ❤️ 和代码构建</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
