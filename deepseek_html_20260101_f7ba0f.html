@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的名字 | 创意开发者</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 字体图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 谷歌字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">你的名字</a>
+            <div class="nav-links">
+                <a href="#work">作品</a>
+                <a href="#about">关于</a>
+                <a href="#contact">联系</a>
+                <a href="#" class="btn-resume">简历</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 英雄区域 -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">创造有意义的数字体验</h1>
+                <p class="hero-subtitle">我是一个<span class="highlight">全栈开发者</span>和<span class="highlight">UI/UX设计师</span>，专注于构建美观且功能强大的网络应用。</p>
+                <div class="hero-btns">
+                    <a href="#work" class="btn-primary">查看作品</a>
+                    <a href="#contact" class="btn-secondary">联系我</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- 这里放你的头像或插图 -->
+                <div class="image-placeholder"></div>
+            </div>
+        </section>
+
+        <!-- 作品展示区域 -->
+        <section id="work" class="projects-section">
+            <h2 class="section-title">精选项目</h2>
+            <div class="projects-grid">
+                <!-- 项目卡片将通过JavaScript动态生成 -->
+            </div>
+        </section>
+
+        <!-- 关于我区域 -->
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2 class="section-title">关于我</h2>
+                <p>我是一名充满激情的开发者，拥有[X]年构建Web应用的经验。我热爱将复杂问题转化为简洁、优雅的解决方案。</p>
+                <div class="skills">
+                    <h3>技术栈</h3>
+                    <div class="skills-list">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Vue.js</span>
+                        <span>Node.js</span>
+                        <span>UI/UX设计</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <!-- 关于我的图片 -->
+                <div class="image-placeholder"></div>
+            </div>
+        </section>
+
+        <!-- 联系区域 -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">联系我</h2>
+            <p>有项目想法或想聊聊？随时联系！</p>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com">
+                    <i class="fas fa-envelope"></i> your.email@example.com
+                </a>
+                <a href="https://github.com/yourusername" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; <span id="current-year">2023</span> 你的名字. 保留所有权利.</p>
+        <p>用 ❤️ 和代码构建</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
